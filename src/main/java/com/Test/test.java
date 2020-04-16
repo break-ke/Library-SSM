@@ -17,6 +17,7 @@ public class test {
         userService service = (userService) ac.getBean("userservice");
         List<book> list = service.getBook();
         System.out.println(list.size());
+        System.out.println("哈哈哈哈哈");
         for (book book : list) {
             System.out.println("书名:"+book.getName());
             System.out.println("作者:"+book.getAuthor());
