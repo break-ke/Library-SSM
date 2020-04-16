@@ -1,0 +1,230 @@
+[ERROR] [2020-04-13 14:33:23][com.alibaba.druid.pool.DruidDataSource]dataSource init error
+java.sql.SQLException: unkow jdbc driver : url=jdbc:oracle:thin:@localhost:1521:orcl
+	at com.alibaba.druid.util.JdbcUtils.getDriverClassName(JdbcUtils.java:411)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:557)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1929)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1871)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1799)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1706)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1451)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1706)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1451)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1643)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:895)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:613)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:533)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:499)
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:265)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1451)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:537)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:653)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:224)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1429)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:144)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:85)
+	at com.Test.test.main(test.java:16)
+[INFO] [2020-04-13 14:33:23][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG] [2020-04-13 14:35:12][druid.sql.Connection]{conn-10001} connected
+[DEBUG] [2020-04-13 14:35:12][druid.sql.Connection]{conn-10002} connected
+[DEBUG] [2020-04-13 14:35:12][druid.sql.Connection]{conn-10003} connected
+[DEBUG] [2020-04-13 14:35:12][druid.sql.Connection]{conn-10004} connected
+[DEBUG] [2020-04-13 14:35:12][druid.sql.Connection]{conn-10005} connected
+[INFO] [2020-04-13 14:35:12][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG] [2020-04-13 14:35:13][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG] [2020-04-13 14:35:13][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG] [2020-04-13 14:35:13][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG] [2020-04-13 14:35:13][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG] [2020-04-13 14:35:13][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from Book
+[DEBUG] [2020-04-13 14:35:13][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG] [2020-04-13 14:35:13][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG] [2020-04-13 14:35:13][druid.sql.Statement]{conn-10005, pstmt-20000} executed. select * from Book
+[DEBUG] [2020-04-13 14:35:13][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 22.0262 millis. select * from Book
+[DEBUG] [2020-04-13 14:35:13][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG] [2020-04-13 14:35:13][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [ID, NAME, AUTHOR, PUBLISH, PUBLISHDATE, PAGE, PRICE, CONTENT]
+[DEBUG] [2020-04-13 14:35:13][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [10, www, www, www, null, null, null, null]
+[DEBUG] [2020-04-13 14:35:14][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [11, sss, sss, sss, null, null, null, null]
+[DEBUG] [2020-04-13 14:35:14][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [12, aaaa, aaa, aaa, null, null, null, null]
+[DEBUG] [2020-04-13 14:35:14][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [13, ddd, ddd, ddd, null, null, null, null]
+[DEBUG] [2020-04-13 14:35:14][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [14, dasda, dada, dasda, null, null, null, null]
+[DEBUG] [2020-04-13 14:35:14][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [15, dsdas, dsdsds, aasd, null, null, null, null]
+[DEBUG] [2020-04-13 14:35:14][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [16, dadasdw, wd12, das2, null, null, null, null]
+[DEBUG] [2020-04-13 14:35:14][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [17, wdda, dsc, asd, null, null, null, null]
+[DEBUG] [2020-04-13 14:35:14][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, JAVA, 甲骨文, 应科, 2020-03-18, 50, 99, 这是一本好书]
+[DEBUG] [2020-04-13 14:35:14][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [4, HTML, 星星, 小学生, 2020-03-18, 60, 99, 这也是一本相当好的书]
+[DEBUG] [2020-04-13 14:35:14][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [6, 王东栋, 王东栋, 王东栋, null, 12, 55, 好东西]
+[DEBUG] [2020-04-13 14:35:14][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG] [2020-04-13 14:35:14][druid.sql.Statement]{conn-10005, pstmt-20000} closed
+[DEBUG] [2020-04-13 14:35:14][druid.sql.Connection]{conn-10005} commited
+[DEBUG] [2020-04-13 14:35:14][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG] [2020-04-13 14:35:14][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG] [2020-04-13 14:46:29][druid.sql.Connection]{conn-10001} connected
+[DEBUG] [2020-04-13 14:46:29][druid.sql.Connection]{conn-10002} connected
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Connection]{conn-10003} connected
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Connection]{conn-10004} connected
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Connection]{conn-10005} connected
+[INFO] [2020-04-13 14:46:30][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from Book
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Statement]{conn-10005, pstmt-20000} executed. select * from Book
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 19.4711 millis. select * from Book
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [ID, NAME, AUTHOR, PUBLISH, PUBLISHDATE, PAGE, PRICE, CONTENT]
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [10, 疾风剑豪, 英雄联盟, www, null, null, null, null]
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [11, 放逐之刃, 英雄联盟, sss, null, null, null, null]
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [12, 钢铁烈阳, 英雄联盟, aaa, null, null, null, null]
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [13, 峡谷之巅, 英雄联盟, ddd, null, null, null, null]
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [14, 死亡绽放, 英雄联盟, dasda, null, null, null, null]
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [15, 影流之主, 英雄联盟, aasd, null, null, null, null]
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [16, 地魂圣枪, 英雄联盟, das2, null, null, null, null]
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [17, 提莫队长, 英雄联盟, asd, null, null, null, null]
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, JAVA, 甲骨文, 应科, 2020-03-18, 50, 99, 这是一本好书]
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [4, HTML, 星星, 小学生, 2020-03-18, 60, 99, 这也是一本相当好的书]
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [6, 王东栋, 王东栋, 王东栋, null, 12, 55, 好东西]
+[DEBUG] [2020-04-13 14:46:30][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Statement]{conn-10005, pstmt-20000} closed
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Connection]{conn-10005} commited
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG] [2020-04-13 14:46:30][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG] [2020-04-13 14:53:49][druid.sql.Connection]{conn-10001} connected
+[DEBUG] [2020-04-13 14:53:49][druid.sql.Connection]{conn-10002} connected
+[DEBUG] [2020-04-13 14:53:49][druid.sql.Connection]{conn-10003} connected
+[DEBUG] [2020-04-13 14:53:49][druid.sql.Connection]{conn-10004} connected
+[DEBUG] [2020-04-13 14:53:49][druid.sql.Connection]{conn-10005} connected
+[INFO] [2020-04-13 14:53:49][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG] [2020-04-13 14:53:50][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG] [2020-04-13 14:53:50][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG] [2020-04-13 14:53:50][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG] [2020-04-13 14:53:50][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG] [2020-04-13 14:53:50][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from Book
+[DEBUG] [2020-04-13 14:53:50][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG] [2020-04-13 14:53:50][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG] [2020-04-13 14:53:50][druid.sql.Statement]{conn-10005, pstmt-20000} executed. select * from Book
+[DEBUG] [2020-04-13 14:53:50][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 19.5333 millis. select * from Book
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [ID, NAME, AUTHOR, PUBLISH, PUBLISHDATE, PAGE, PRICE, CONTENT]
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [10, 疾风剑豪, 英雄联盟, www, null, null, null, null]
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [11, 放逐之刃, 英雄联盟, sss, null, null, null, null]
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [12, 钢铁烈阳, 英雄联盟, aaa, null, null, null, null]
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [13, 峡谷之巅, 英雄联盟, ddd, null, null, null, null]
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [14, 死亡绽放, 英雄联盟, dasda, null, null, null, null]
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [15, 影流之主, 英雄联盟, aasd, null, null, null, null]
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [16, 地魂圣枪, 英雄联盟, das2, null, null, null, null]
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [17, 提莫队长, 英雄联盟, asd, null, null, null, null]
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, JAVA, 甲骨文, 应科, 2020-03-18, 50, 99, 这是一本好书]
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [4, HTML, 星星, 小学生, 2020-03-18, 60, 99, 这也是一本相当好的书]
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [6, 王东栋, 王东栋, 王东栋, null, 12, 55, 好东西]
+[DEBUG] [2020-04-13 14:53:50][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG] [2020-04-13 14:53:50][druid.sql.Statement]{conn-10005, pstmt-20000} closed
+[DEBUG] [2020-04-13 14:53:50][druid.sql.Connection]{conn-10005} commited
+[DEBUG] [2020-04-13 14:53:50][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG] [2020-04-13 14:53:50][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG] [2020-04-13 14:56:23][druid.sql.Connection]{conn-10001} connected
+[DEBUG] [2020-04-13 14:56:23][druid.sql.Connection]{conn-10002} connected
+[DEBUG] [2020-04-13 14:56:23][druid.sql.Connection]{conn-10003} connected
+[DEBUG] [2020-04-13 14:56:23][druid.sql.Connection]{conn-10004} connected
+[DEBUG] [2020-04-13 14:56:23][druid.sql.Connection]{conn-10005} connected
+[INFO] [2020-04-13 14:56:23][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG] [2020-04-13 14:56:24][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG] [2020-04-13 14:56:24][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG] [2020-04-13 14:56:24][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG] [2020-04-13 14:56:24][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG] [2020-04-13 14:56:24][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from Book
+[DEBUG] [2020-04-13 14:56:24][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG] [2020-04-13 14:56:24][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG] [2020-04-13 14:56:24][druid.sql.Statement]{conn-10005, pstmt-20000} executed. select * from Book
+[DEBUG] [2020-04-13 14:56:24][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 18.804 millis. select * from Book
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [ID, NAME, AUTHOR, PUBLISH, PUBLISHDATE, PAGE, PRICE, CONTENT]
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [10, 疾风剑豪, 英雄联盟, www, null, null, null, null]
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [11, 放逐之刃, 英雄联盟, sss, null, null, null, null]
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [12, 钢铁烈阳, 英雄联盟, aaa, null, null, null, null]
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [13, 峡谷之巅, 英雄联盟, ddd, null, null, null, null]
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [14, 死亡绽放, 英雄联盟, dasda, null, null, null, null]
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [15, 影流之主, 英雄联盟, aasd, null, null, null, null]
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [16, 地魂圣枪, 英雄联盟, das2, null, null, null, null]
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [17, 提莫队长, 英雄联盟, asd, null, null, null, null]
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, JAVA, 甲骨文, 应科, 2020-03-18, 50, 99, 这是一本好书]
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [4, HTML, 星星, 小学生, 2020-03-18, 60, 99, 这也是一本相当好的书]
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [6, 王东栋, 王东栋, 王东栋, null, 12, 55, 好东西]
+[DEBUG] [2020-04-13 14:56:24][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG] [2020-04-13 14:56:24][druid.sql.Statement]{conn-10005, pstmt-20000} closed
+[DEBUG] [2020-04-13 14:56:24][druid.sql.Connection]{conn-10005} commited
+[DEBUG] [2020-04-13 14:56:24][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG] [2020-04-13 14:56:24][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG] [2020-04-13 14:59:17][druid.sql.Connection]{conn-10001} connected
+[DEBUG] [2020-04-13 14:59:17][druid.sql.Connection]{conn-10002} connected
+[DEBUG] [2020-04-13 14:59:17][druid.sql.Connection]{conn-10003} connected
+[DEBUG] [2020-04-13 14:59:17][druid.sql.Connection]{conn-10004} connected
+[DEBUG] [2020-04-13 14:59:17][druid.sql.Connection]{conn-10005} connected
+[INFO] [2020-04-13 14:59:17][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG] [2020-04-13 14:59:17][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG] [2020-04-13 14:59:17][druid.sql.Connection]{conn-10005} pool-recycle
+[DEBUG] [2020-04-13 14:59:17][druid.sql.Connection]{conn-10005} pool-connect
+[DEBUG] [2020-04-13 14:59:17][druid.sql.Connection]{conn-10005} setAutoCommit false
+[DEBUG] [2020-04-13 14:59:17][druid.sql.Statement]{conn-10005, pstmt-20000} created. select * from Book
+[DEBUG] [2020-04-13 14:59:18][druid.sql.Statement]{conn-10005, pstmt-20000} Parameters : []
+[DEBUG] [2020-04-13 14:59:18][druid.sql.Statement]{conn-10005, pstmt-20000} Types : []
+[DEBUG] [2020-04-13 14:59:18][druid.sql.Statement]{conn-10005, pstmt-20000} executed. select * from Book
+[DEBUG] [2020-04-13 14:59:18][druid.sql.Statement]{conn-10005, pstmt-20000} executed. 25.5083 millis. select * from Book
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} open
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Header: [ID, NAME, AUTHOR, PUBLISH, PUBLISHDATE, PAGE, PRICE, CONTENT]
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [10, 疾风剑豪, 英雄联盟, www, null, null, null, null]
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [11, 放逐之刃, 英雄联盟, sss, null, null, null, null]
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [12, 钢铁烈阳, 英雄联盟, aaa, null, null, null, null]
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [13, 峡谷之巅, 英雄联盟, ddd, null, null, null, null]
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [14, 死亡绽放, 英雄联盟, dasda, null, null, null, null]
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [15, 影流之主, 英雄联盟, aasd, null, null, null, null]
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [16, 地魂圣枪, 英雄联盟, das2, null, null, null, null]
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [17, 提莫队长, 英雄联盟, asd, null, null, null, null]
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [1, JAVA, 甲骨文, 应科, 2020-03-18, 50, 99, 这是一本好书]
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [4, HTML, 星星, 小学生, 2020-03-18, 60, 99, 这也是一本相当好的书]
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} Result: [6, 王东栋, 王东栋, 王东栋, null, 12, 55, 好东西]
+[DEBUG] [2020-04-13 14:59:18][druid.sql.ResultSet]{conn-10005, pstmt-20000, rs-50000} closed
+[DEBUG] [2020-04-13 14:59:18][druid.sql.Statement]{conn-10005, pstmt-20000} closed
+[DEBUG] [2020-04-13 14:59:18][druid.sql.Connection]{conn-10005} commited
+[DEBUG] [2020-04-13 14:59:18][druid.sql.Connection]{conn-10005} setAutoCommit true
+[DEBUG] [2020-04-13 14:59:18][druid.sql.Connection]{conn-10005} pool-recycle
